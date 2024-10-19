@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Locadorax</title>
+    <style>
+        .more-info {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .more-info button {
+            background-color: #555;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .more-info button:hover {
+            background-color: #777;
+        }
+
+        .search-bar {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        .search-bar input[type="submit"] {
+            background-color: #555;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 10px;
+        }
+
+        .search-bar input[type="submit"]:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <button class="show-menu" onclick="toggleMenu()">☰</button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="home.html">GERAL</a></li>
+                <li><a href="indexxande.html">DE LAVADA</a></li>
+                <li><a href="indexxande.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <header>
+        <nav class="Titulo">
+            <h1>XANDY PATO</h1>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1></h1>
+        <p>DERROTAS EM CATAZ</p>
+        <div class="image-box">
+            <img id="product-image" src="images/xandy 1.jpg" alt="Produto" />
+           
+        </div>
+    </div>
+
+    <div class="image-gallery">
+        <h2>Galeria de derrotas</h2>
+        <div class="gallery-container">
+            <img src="images/xadrex 1.jpg" alt="Imagem 1" />
+            <img src="images/xadrex 2.jpg" alt="Imagem 2" />
+            <img src="images/xadrex 3.jpg" alt="Imagem 3" />
+            <img src="images/xadrex 4.jpg" alt="Imagem 4" />
+            <img src="images/xadrex 5.jpg" alt="Imagem 5" />
+            <img src="images/xadrex 6.jpg" alt="Imagem 1" />
+            <img src="images/xadrex 7.jpg" alt="Imagem 3" />
+            <img src="images/xadrex 8.jpg" alt="Imagem 4" />
+            <img src="images/xadrex 9.jpg" alt="Imagem 5" />
+            <img src="images/xadrex 10.jpg" alt="Imagem 4" />
+            <img src="images/xadrex 11.jpg" alt="Imagem 5" />
+            <img src="images/xadrex 12.jpg" alt="Imagem 4" />
+            <img src="images/xadrex 13.jpg" alt="Imagem 5" />
+            <img src="images/xadrex 14.jpg" alt="Imagem 5" />
+            <img src="images/xadrex 15.jpg" alt="Imagem 5" />
+        </div>
+    </div>
+
+    <div class="more-info">
+        <h2>Saiba Mais Sobre minhas vitorias</h2>
+        <p>Todos os dias uma derrota diferente</p>
+        <button onclick="window.location.href='indexxande.html'">Saiba Mais</button>
+    </div>
+
+    <div class="search-bar">
+        <h2>Pesquisar derrotas</h2>
+        <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Digite sua pesquisa..." />
+            <input type="submit" value="Pesquisar" />
+        </form>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Luiz enquanto amassa o XandyzinhoPato</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("active");
+        }
+
+        const images = ["Imagem 1.jpeg", "Imagem 2.jpeg", "Imagem 3.jpeg"];
+        let currentImageIndex = 0;
+
+        function showImage(index) {
+            const imageElement = document.getElementById("product-image");
+            imageElement.src = images[index];
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+            showImage(currentImageIndex);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c; /* Cinza escuro para o fundo */
+    color: #e0e0e0; /* Texto claro para contraste */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1a1a1a; /* Cinza muito escuro */
+    padding: 10px;
+    position: relative;
+}
+
+.show-menu {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #e0e0e0; /* Cor clara para contraste */
+    cursor: pointer;
+}
+
+/* Menu */
+.nav-menu {
+    display: none;
+}
+
+.nav-menu.active {
+    display: block;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 5px 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #e0e0e0; /* Cor clara para contraste */
+}
+
+/* Conteúdo Principal */
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#product-image {
+    max-width: 300px; /* Aumentando o tamanho da imagem */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
+}
+
+button.next {
+    background-color: #1a1a1a; /* Cor do botão */
+    border: none;
+    color: #e0e0e0; /* Cor clara para contraste */
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button.next:hover {
+    background-color: #333333; /* Cor ao passar o mouse */
+}
+
+.description {
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a1a1a; /* Cinza muito escuro */
+    color: #e0e0e0; /* Cor clara para contraste */
+    text-align: center;
+    padding: 10px;
+}
+/* Seção de Imagens com Scroll */
+.image-gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+}
+
+.gallery-container img {
+    max-width: 150px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Titulo {
+    background-color: #1a1a1a; /* Cinza muito escuro */
+    padding: 10px;
+    position: absolute;
+    align-items: center;
+}
